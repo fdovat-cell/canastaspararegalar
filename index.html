@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#cbddd1">
+<title>Canastas para regalar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--sage:#cbddd1;--hov:#bdd3c4;--vd:#1f4f14;--tx:#262626;--crema:#f7f2de}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--sage);color:var(--vd);padding-bottom:84px;line-height:1.4}
+:focus-visible{outline:2px solid var(--vd);outline-offset:2px}
+button,.btn{font:inherit;font-weight:500;cursor:pointer;border:1px solid var(--vd);border-radius:2px;padding:11px 20px;text-decoration:none;display:inline-block;text-align:center;background:var(--vd);color:var(--sage)}
+.btn.o,button.o{background:none;color:var(--vd)}
+.wrap{max-width:1000px;margin:auto;padding:0 16px}
+header{text-align:center;padding:28px 0 8px}
+.temp{font-size:clamp(1.3rem,4vw,2rem);font-weight:400}
+h1{font-weight:400;font-size:clamp(2.3rem,10.5vw,6rem);line-height:.98;color:var(--tx);margin:6px 0 0;letter-spacing:-.01em}
+h1 .l1,h1 .l2{display:block}
+h1 .l2{margin:0 0 .45em;padding-left:.34em}
+.tit{display:table;margin:0 auto;text-align:left}
+.frases{width:0;min-width:100%}
+h1 .c,h1 .a{color:var(--vd);font-weight:400;position:relative;line-height:0;text-shadow:-1px -1px 0 var(--crema),1px -1px 0 var(--crema),-1px 1px 0 var(--crema),1px 1px 0 var(--crema)}
+h1 .c{top:.25em;font-size:1.25em;margin-right:.08em}
+h1 .l1{letter-spacing:0}
+h1 .p{font-size:.85em}
+h1 .a{top:.24em;font-size:1.35em}
+.f1{font-size:clamp(1.15rem,3.6vw,1.9rem);font-weight:400;margin:14px 0 4px;text-align:left}
+.grid{column-count:3;column-gap:10px;padding-top:1px}
+.card{display:inline-block;width:100%;padding:0;background:none;color:var(--vd);border:1px solid var(--vd);margin:0 0 10px;break-inside:avoid;border-radius:0;text-align:center}
+.card:hover .cap{background:var(--hov)}
+.card img{display:block;width:100%;object-fit:cover;background:#dde}
+.cap{display:block;padding:10px 4px 12px;border-top:1px solid var(--vd)}
+.nm{display:block;font-size:.8rem;line-height:1.2}.pr{display:block;font-weight:600;margin-top:2px;font-size:.78rem}
+@media(min-width:560px){.grid{column-gap:12px}.card{margin-bottom:12px}.cap{padding:14px 8px 16px}.nm{font-size:1.05rem}.pr{font-size:1rem}}
+.err{grid-column:1/-1;padding:24px;text-align:center}
+.nota{font-size:.85rem;text-align:center;margin:14px 0 4px}
+.medida{border:1px solid var(--vd);margin:34px 0 24px;padding:22px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.medida div{flex:1 1 280px}.medida b{font-size:1.2rem;font-weight:500;display:block;margin-bottom:4px}
+.medida .acc{display:flex;gap:8px;flex:0 0 auto}
+.f2{font-size:clamp(1rem,2.9vw,1.4rem);font-weight:300;margin:0 0 30px;text-align:right}
+.bar{position:fixed;left:0;right:0;bottom:0;display:flex;gap:10px;justify-content:center;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--sage);border-top:1px solid var(--vd);z-index:6}
+.bar>*{flex:1;max-width:260px}
+.bar span{border:1px solid currentColor;border-radius:99px;padding:0 7px;margin-left:6px;font-size:.85rem}
+#sheet,#det{position:fixed;inset:0;background:rgba(31,79,20,.45);display:none;z-index:10}
+#sheet.on{display:flex;align-items:flex-end}#det.on{display:flex;align-items:center;justify-content:center;padding:16px}
+.panel,.dp{background:var(--sage);border:1px solid var(--vd)}
+.panel{width:100%;max-width:600px;margin:auto;max-height:88vh;overflow:auto;padding:18px 16px calc(18px + env(safe-area-inset-bottom))}
+h2{font-weight:500;font-size:1.5rem;display:flex;justify-content:space-between;align-items:center}
+.x{background:none;color:var(--vd);border:0;font-size:1.3rem;padding:0 6px}
+.it{display:flex;align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid var(--vd)}
+.it div{flex:1}.q{display:flex;align-items:center;gap:8px}
+.q button{width:32px;height:32px;padding:0;background:none;color:var(--vd)}
+.tot{font-size:1.3rem;font-weight:600;text-align:right;margin:12px 0}
+.panel input,.panel textarea{width:100%;font:inherit;padding:10px;border:1px solid var(--vd);border-radius:2px;margin-bottom:8px;background:#fff;color:var(--tx)}
+.panel .btn{width:100%;display:block;padding:13px}
+.vacio{text-align:center;padding:20px}
+.dp{max-width:440px;width:100%;max-height:90vh;overflow:auto;position:relative}
+.dp img{width:100%;display:block;border-bottom:1px solid var(--vd)}
+.dp .cl{position:absolute;top:8px;right:8px;background:var(--sage);border:1px solid var(--vd);width:34px;height:34px;border-radius:50%;padding:0}
+.dp .d{padding:16px 18px 20px;display:flex;flex-direction:column;gap:8px}
+.dp .pr{font-size:1.5rem;margin:0}
+.dp ul{padding-left:20px;margin-top:4px}
+.dp .acc{display:flex;gap:8px}.dp .acc>*{flex:1}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="temp" id="temp"></div>
+  <div class="tit">
+    <h1><span class="l1"><span class="c">C</span>ANASTAS <span class="p">para</span></span><span class="l2">REG<span class="a">A</span>LAR</span></h1>
+    <div class="frases"><p class="f1" id="f1"></p><p class="f2" id="f2"></p></div>
+  </div>
+</header>
+
+<div class="grid" id="grid"><p class="err">Cargando…</p></div>
+<p class="nota" id="nota2"></p>
+
+<div class="medida">
+  <div><b id="lema"></b><span id="medida"></span></div>
+  <div class="acc"><a class="btn lwa" target="_blank" rel="noopener">WhatsApp</a></div>
+</div>
+</div>
+
+<div class="bar">
+  <button class="o" id="abrir">Mi pedido<span id="cnt">0</span></button>
+  <a class="btn lwa" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<div id="sheet"><div class="panel">
+  <h2>Tu pedido <button class="x" id="cerrar" aria-label="Cerrar">✕</button></h2>
+  <div id="items"></div><div class="tot" id="tot"></div>
+  <input id="nom" placeholder="Tu nombre (opcional)">
+  <textarea id="nota" rows="2" placeholder="Comentario o dirección de entrega (opcional)"></textarea>
+  <a class="btn" id="envia" target="_blank" rel="noopener">Enviar pedido por WhatsApp</a>
+</div></div>
+
+<div id="det"><div class="dp">
+  <button class="x cl" id="dx" aria-label="Cerrar">✕</button>
+  <img id="dimg" alt="">
+  <div class="d"><h2 id="dn"></h2><p class="pr" id="dpr"></p><div id="dc"></div>
+    <div class="acc"><button id="dadd">Agregar al pedido</button><a class="btn o" id="dq" target="_blank" rel="noopener">Consultar</a></div>
+  </div>
+</div></div>
+
+<script src="canastas.js"></script>
+<script>
+const $=s=>document.querySelector(s);
+let D,cart={},cur;
+const fmt=n=>'$'+n.toLocaleString('es-UY');
+const wa=t=>`https://wa.me/${D.config.whatsapp}?text=${encodeURIComponent(t)}`;
+const byId=id=>D.canastas.find(c=>c.id===id);
+
+if(typeof DATOS==='undefined')$('#grid').innerHTML='<p class="err">No se pudieron cargar las canastas. Escribinos por WhatsApp y te las mandamos.</p>';
+else init(DATOS);
+
+function init(d){
+  D=d;const c=d.config;
+  d.canastas.sort((a,b)=>a.precio-b.precio);
+  $('#temp').textContent=c.temporada||'';$('#f1').textContent=c.frase1||'';$('#f2').textContent=c.frase2||'';
+  $('#lema').textContent=c.lema;$('#medida').textContent=c.medida;
+  $('#nota2').textContent=[c.ivaNota,'Medios de pago: '+c.pagos.join(', ')+'.'].filter(Boolean).join(' ');
+  const hola=wa('Hola, quería consultar por las canastas de fin de año.');
+  document.querySelectorAll('.lwa').forEach(a=>a.href=hola);
+  $('#grid').innerHTML=d.canastas.map((k,i)=>`
+   <button class="card" data-id="${k.id}"><img src="${k.foto}" alt="${k.nombre}" loading="lazy" style="aspect-ratio:${['impecable','te-pasaste','descontrol'].includes(k.id)?'4/5':['1/1','10/11','9/10'][i%3]}">
+    <span class="cap"><span class="nm">${k.nombre.replace('Canasta ','')}</span><span class="pr">${fmt(k.precio)}</span></span></button>`).join('');
+  $('#grid').onclick=e=>{const card=e.target.closest('.card');if(card)ver(card.dataset.id)};
+  draw();
+}
+
+function ver(id){cur=id;const k=byId(id);
+  $('#dimg').src=k.foto;$('#dimg').alt=k.nombre;$('#dn').textContent=k.nombre;$('#dpr').textContent=fmt(k.precio);
+  $('#dc').innerHTML=k.contenido&&k.contenido.length?'<b>Qué trae</b><ul>'+k.contenido.map(x=>`<li>${x}</li>`).join('')+'</ul>':'';
+  $('#dq').href=wa('Hola, quería consultar por la '+k.nombre);
+  $('#det').classList.add('on')}
+
+function draw(){
+  const ids=Object.keys(cart).filter(i=>cart[i]>0);
+  const n=ids.reduce((s,i)=>s+cart[i],0),total=ids.reduce((s,i)=>s+cart[i]*byId(i).precio,0);
+  $('#cnt').textContent=n;
+  $('#items').innerHTML=ids.length?ids.map(i=>{const k=byId(i);return `<div class="it"><div>${k.nombre}<br><small>${fmt(k.precio)}</small></div><div class="q"><button data-m="${i}">−</button><b>${cart[i]}</b><button data-p="${i}">+</button></div></div>`}).join(''):'<p class="vacio">Todavía no agregaste canastas.</p>';
+  $('#tot').textContent=ids.length?'Total: '+fmt(total):'';
+  $('#envia').style.display=ids.length?'block':'none';
+  if(!ids.length)return;
+  let t='Hola, quiero hacer un pedido:\n'+ids.map(i=>`- ${cart[i]} × ${byId(i).nombre} (${fmt(byId(i).precio)})`).join('\n')+'\nTotal: '+fmt(total);
+  if($('#nom').value.trim())t+='\nNombre: '+$('#nom').value.trim();
+  if($('#nota').value.trim())t+='\nComentario: '+$('#nota').value.trim();
+  $('#envia').href=wa(t);
+}
+$('#items').onclick=e=>{const m=e.target.dataset.m,p=e.target.dataset.p;if(m)cart[m]--;if(p)cart[p]++;if(m||p)draw()};
+['#nom','#nota'].forEach(s=>$(s).oninput=draw);
+$('#dadd').onclick=e=>{cart[cur]=(cart[cur]||0)+1;draw();const b=e.target;b.textContent='Agregada ✓';setTimeout(()=>b.textContent='Agregar al pedido',1000)};
+$('#dx').onclick=()=>$('#det').classList.remove('on');
+$('#det').onclick=e=>{if(e.target.id==='det')e.target.classList.remove('on')};
+$('#abrir').onclick=()=>$('#sheet').classList.add('on');
+$('#cerrar').onclick=()=>$('#sheet').classList.remove('on');
+$('#sheet').onclick=e=>{if(e.target.id==='sheet')e.target.classList.remove('on')};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){$('#det').classList.remove('on');$('#sheet').classList.remove('on')}});
+</script>
+</body>
+</html>
