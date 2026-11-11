@@ -47,14 +47,14 @@ const DATOS = {
       "id": "bayley-s",
       "nombre": "Canasta Bayley S",
       "precio": 3390,
-      "foto": "fotos/bayley-s.jpg",
+      "foto": "fotos/bayley-s.webp",
       "contenido": []
     },
     {
       "id": "impecable",
       "nombre": "Canasta Impecable",
       "precio": 3490,
-      "foto": "fotos/impecable.jpg",
+      "foto": "fotos/impecable.webp",
       "contenido": []
     },
     {
