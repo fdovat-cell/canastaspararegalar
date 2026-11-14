@@ -34,14 +34,30 @@ const DATOS = {
       "nombre": "Canasta Oportuna",
       "precio": 2990,
       "foto": "fotos/oportuna.jpg",
-      "contenido": []
+      "contenido": [
+        "Vino Liebfraumilch 750 ml (Alemania)",
+        "Palitos Stickletti 125 g (Alemania)",
+        "Maní Ultje 200 g (Alemania)",
+        "Paté Tulip 125 g (Bélgica)",
+        "Aceitunas Serpis con anchoas 125 g (España)",
+        "Barra de chocolate Twix Bar 45 g x 3",
+        "Turrón Oro Navideño 150 g (España)"
+      ]
     },
     {
       "id": "compromiso",
       "nombre": "Canasta Compromiso",
       "precio": 3290,
       "foto": "fotos/compromiso.jpg",
-      "contenido": []
+      "contenido": [
+        "Vino La Escondida Malbec 750 ml (Argentina)",
+        "Tortilla chips original 125 g (Alemania)",
+        "Pringles original 12 x 40 g (EE.UU.)",
+        "Maxi Mix 125 g (Alemania)",
+        "Mini Brezli Wolf 100 g (Alemania)",
+        "Chocolas Crispy Milk 125 g (Bélgica)",
+        "Twix Bar 18 x 45 g, 810 g (Brasil)"
+      ]
     },
     {
       "id": "bayley-s",
@@ -55,7 +71,17 @@ const DATOS = {
       "nombre": "Canasta Impecable",
       "precio": 3490,
       "foto": "fotos/impecable.webp",
-      "contenido": []
+      "contenido": [
+        "Vino Undurraga Cabernet Sauvignon / Blanc 750 ml (Chile)",
+        "Studentenfutter, maní con pasas 200 g (Alemania)",
+        "Papas Pringles originales 140 g (Brasil)",
+        "M&M chocolate 104 g (Brasil)",
+        "Barra de chocolate Twix Bar 45 g x 3",
+        "Turrón Almendro 150 g (España)",
+        "Dientes de ajo marinados “Delicias” (España)",
+        "Mejillones en salsa de tomate (Alemania)",
+        "Caramelos en lata “Cavendish” (Alemania)"
+      ]
     },
     {
       "id": "dulce-jack",
@@ -83,14 +109,42 @@ const DATOS = {
       "nombre": "Canasta Barbaridad",
       "precio": 9790,
       "foto": "fotos/barbaridad.jpg",
-      "contenido": []
+      "contenido": [
+        "Whisky Johnnie Walker Etiqueta Roja 1 l",
+        "Champagne Henkell Trocken Brut 750 ml (Alemania)",
+        "Chocolas Crispy Naranja 125 g (Alemania)",
+        "Chocolate Stick 110 g (Alemania)",
+        "Turrón La Bruja 150 g (España)",
+        "Papas Pringles 140 g (Brasil)",
+        "Sardinas ahumadas Rugenfish 110 g (Alemania)",
+        "Pistachos Pitjes en lata 110 g (Alemania)",
+        "Pulpo en aceite vegetal 110 g (España)",
+        "Paté Tulip 125 g (Bélgica)",
+        "Choclitos Paulsen 330 g (Alemania)",
+        "Pepinos Paulsen 330 g (Alemania)",
+        "Aceitunas Serpis con anchoas 40 g (España)",
+        "Snacks Maxi Mix 125 g (Alemania)"
+      ]
     },
     {
       "id": "distincion",
       "nombre": "Canasta Distinción",
       "precio": 11690,
       "foto": "fotos/distincion.jpg",
-      "contenido": []
+      "contenido": [
+        "Whisky Johnnie Walker Etiqueta Negra 1 l",
+        "Champagne Henkell Trocken Dry Sec 750 ml (Alemania)",
+        "Vino Undurraga “Aliwen” Cabernet Carmenere 750 ml (Chile)",
+        "Turrón blando La Bruja 150 g (España)",
+        "Turrón duro El Almendro 75 g (España)",
+        "Barra de chocolate Twix Bar 45 g x 3 (Brasil)",
+        "Lata de galletas danesas 454 g (Dinamarca)",
+        "Chocolas Crispy Milk 125 g (Alemania)",
+        "Aceitunas Serpis con anchoas (Alemania)",
+        "Papas Pringles 140 g (Brasil)",
+        "Bacalao a la vizcaína 125 g (España)",
+        "Dientes de ajo marinados 65 g (España)"
+      ]
     },
     {
       "id": "descontrol",
