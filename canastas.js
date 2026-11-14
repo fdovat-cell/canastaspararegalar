@@ -4,7 +4,7 @@ const DATOS = {
     "whatsapp": "59896190002",
     "ivaNota": "Todos los precios incluyen IVA.",
     "lema": "Calidad y el más eficiente servicio para sus compromisos de Fin de Año.",
-    "medida": "Preparamos canastas especiales de acuerdo al gusto, preferencia y presupuesto de cada cliente. Consúltenos y le sugeriremos las mejores opciones.",
+    "medida": "Preparamos canastas especiales de acuerdo al gusto, preferencia y presupuesto de cada cliente. Consúltenos y le sugeriremos las mejores opciones. El contenido puede variar según disponibilidad, siempre dentro de la misma categoría.",
     "pagos": [
       "Tarjetas de crédito y débito",
       "Transferencias y pagos online",
@@ -111,7 +111,7 @@ const DATOS = {
       "foto": "fotos/barbaridad.jpg",
       "contenido": [
         "Whisky Johnnie Walker Etiqueta Roja 1 l",
-        "Champagne Henkell Trocken Brut 750 ml (Alemania)",
+        "Champagne Mercier Brut 750 ml (Francia)",
         "Chocolas Crispy Naranja 125 g (Alemania)",
         "Chocolate Stick 110 g (Alemania)",
         "Turrón La Bruja 150 g (España)",
