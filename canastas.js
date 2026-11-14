@@ -108,7 +108,7 @@ const DATOS = {
       "id": "barbaridad",
       "nombre": "Canasta Barbaridad",
       "precio": 9790,
-      "foto": "fotos/barbaridad.jpg",
+      "foto": "fotos/barbaridad.webp",
       "contenido": [
         "Whisky Johnnie Walker Etiqueta Roja 1 l",
         "Champagne Mercier Brut 750 ml (Francia)",
