@@ -134,7 +134,17 @@ const DATOS = {
       "nombre": "Canasta Mi 1er Johnnie",
       "precio": 4990,
       "foto": "fotos/mi-1er-johnnie.webp",
-      "contenido": [],
+      "contenido": [
+        "Whisky Johnnie Walker Etiqueta Roja 1 l",
+        "Papas Pringles 140 g (Brasil)",
+        "Turrón La Bruja 150 g (España)",
+        "Lata de galletas danesas 454 g (Dinamarca)",
+        "Barquillos",
+        "Vino Trapiche (Argentina)",
+        "Aceitunas Serpis con anchoas 125 g (España)",
+        "Papas Lorenz",
+        "Maní Amindus"
+      ],
       "destacada": true,
       "formato": "3/2"
     },
