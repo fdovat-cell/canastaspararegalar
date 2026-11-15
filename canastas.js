@@ -43,7 +43,14 @@ const DATOS = {
       "nombre": "Canasta Un Toque",
       "precio": 2340,
       "foto": "fotos/un-toque.webp",
-      "contenido": [],
+      "contenido": [
+        "Cerveza artesanal Volcánica 500 ml x 2",
+        "Palitos Stickletti 125 g (Alemania)",
+        "Chips de vegetales De la Tierra",
+        "Alfajor Celisano",
+        "Maní Ultje chico (Alemania)",
+        "Destapador de Papá Noel"
+      ],
       "formato": "4/5"
     },
     {
@@ -70,7 +77,12 @@ const DATOS = {
       "nombre": "Canasta Dulce Jack",
       "precio": 3790,
       "foto": "fotos/dulce-jack.webp",
-      "contenido": [],
+      "contenido": [
+        "Whisky Jack Daniel’s Old No. 7 700 ml (EE.UU.)",
+        "Coca-Cola 600 ml",
+        "Bombones Ferrero Rocher",
+        "Barra de chocolate Snickers"
+      ],
       "formato": "1/1"
     },
     {
@@ -78,7 +90,10 @@ const DATOS = {
       "nombre": "Canasta Bayley S",
       "precio": 3390,
       "foto": "fotos/bayley-s.webp",
-      "contenido": [],
+      "contenido": [
+        "Licor Baileys The Original Irish Cream (Irlanda)",
+        "Pack Ferrero Rocher"
+      ],
       "formato": "1/1"
     },
     {
@@ -110,7 +125,10 @@ const DATOS = {
       "nombre": "Canasta Un Momento",
       "precio": 2290,
       "foto": "fotos/un-momento.webp",
-      "contenido": [],
+      "contenido": [
+        "Cava Freixenet Cordón Negro Brut (España)",
+        "Pack Ferrero Rocher"
+      ],
       "formato": "1/1"
     },
     {
@@ -136,14 +154,13 @@ const DATOS = {
       "foto": "fotos/mi-1er-johnnie.webp",
       "contenido": [
         "Whisky Johnnie Walker Etiqueta Roja 1 l",
+        "M&M chocolate 104 g (Brasil)",
+        "Turrón El Almendro 150 g (España)",
         "Papas Pringles 140 g (Brasil)",
-        "Turrón La Bruja 150 g (España)",
-        "Lata de galletas danesas 454 g (Dinamarca)",
-        "Barquillos",
-        "Vino Trapiche (Argentina)",
-        "Aceitunas Serpis con anchoas 125 g (España)",
-        "Papas Lorenz",
-        "Maní Amindus"
+        "Turrón blando",
+        "Caramelos en lata Cavendish & Harvey Mixed Fruit Drops 200 g (Alemania)",
+        "Pistachos en lata",
+        "Paté"
       ],
       "destacada": true,
       "formato": "3/2"
