@@ -2,13 +2,14 @@
 const DATOS = {
   "config": {
     "whatsapp": "59896190002",
-    "ivaNota": "Todos los precios incluyen IVA.",
+    "empresa": "Pel Sas",
+    "ivaNota": "Precios IVA incluido",
+    "contenidoNota": "El contenido puede variar según disponibilidad, siempre dentro de la misma categoría.",
     "lema": "Calidad y el más eficiente servicio para sus compromisos de Fin de Año.",
-    "medida": "Preparamos canastas especiales de acuerdo al gusto, preferencia y presupuesto de cada cliente. Consúltenos y le sugeriremos las mejores opciones. El contenido puede variar según disponibilidad, siempre dentro de la misma categoría.",
-    "pagos": [
-      "Tarjetas de crédito y débito",
-      "Transferencias y pagos online",
-      "Mercado Pago"
+    "medida": "Preparamos canastas especiales de acuerdo al gusto, preferencia y presupuesto de cada cliente. Consúltenos y le sugeriremos las mejores opciones.",
+    "ventajas": [
+      { "icono": "pago", "texto": "Todos los medios de pago" },
+      { "icono": "entrega", "texto": "Entregas en Montevideo sin cargo" }
     ],
     "temporada": "",
     "frase1": "Lo mejor que traen nuestras canastas no se ve",

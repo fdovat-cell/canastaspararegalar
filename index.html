@@ -42,6 +42,16 @@ h1 .a{top:.24em;font-size:1.35em}
 .medida{border:1px solid var(--vd);margin:34px 0 24px;padding:22px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
 .medida div{flex:1 1 280px}.medida b{font-size:1.2rem;font-weight:500;display:block;margin-bottom:4px}
 .medida .acc{display:flex;gap:8px;flex:0 0 auto}
+.nota.s{font-size:.75rem;opacity:.85;margin:0 0 4px}
+.fila{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;margin:26px 0 0}
+.vent{display:flex;flex-direction:column}
+.vent>div{display:flex;align-items:center;gap:18px;padding:22px 0}.vent>div+div{border-top:1px solid rgba(31,79,20,.45)}
+.ic{flex:0 0 auto;width:60px;height:60px;border:1px solid var(--vd);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--vd)}.ic svg{width:30px;height:30px}
+.vent p{font-size:1.1rem}
+.firma{display:flex;align-items:center;gap:14px;justify-content:center;font-weight:500;font-size:1.05rem;letter-spacing:.16em;margin:0 0 6px}.firma:before,.firma:after{content:"";flex:1;border-top:1px solid var(--vd);opacity:.55}.firma:empty{display:none}
+.fila figure{margin:0;text-align:center;order:-1}
+.fila img{width:min(340px,80%);height:auto;filter:drop-shadow(0 6px 10px rgba(0,0,0,.22))}
+@media(min-width:700px){.fila{grid-template-columns:1fr 1fr;gap:40px}.fila figure{order:0;text-align:right}.fila img{width:min(520px,100%)}.vent{padding-left:8%}.ic{width:72px;height:72px}.ic svg{width:36px;height:36px}.vent p{font-size:1.3rem}}
 .f2{font-size:clamp(1rem,2.9vw,1.4rem);font-weight:300;margin:0 0 30px;text-align:right}
 .bar{position:fixed;left:0;right:0;bottom:0;display:flex;gap:10px;justify-content:center;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--sage);border-top:1px solid var(--vd);z-index:6}
 .bar>*{flex:1;max-width:260px}
@@ -90,12 +100,14 @@ h2{font-weight:500;font-size:1.5rem;display:flex;justify-content:space-between;a
 
 <div class="grid" id="grid"><p class="err">Cargando…</p></div>
 <p class="nota" id="nota2"></p>
-
+<p class="nota s" id="nota3"></p>
 <div class="sep" aria-hidden="true"><svg viewBox="0 0 60 28" width="56" height="26" fill="none" stroke="#1f4f14" stroke-width="1.6" stroke-linecap="round"><path d="M30 14C18 2 6 4 8 14C6 24 18 26 30 14Z"/><path d="M30 14C42 2 54 4 52 14C54 24 42 26 30 14Z"/><path d="M30 14L22 27M30 14L38 27"/><circle cx="30" cy="14" r="3.2" fill="#b8923a" stroke="none"/></svg></div>
+<section class="fila"><div class="vent" id="vent"></div><figure><img src="fotos/folleto.webp" alt="Canastas para regalar — PelSAS" width="900" height="582" loading="lazy"></figure></section>
 <div class="medida">
   <div><b id="lema"></b><span id="medida"></span></div>
-  <div class="acc"><a class="btn lwa" target="_blank" rel="noopener">WhatsApp</a></div>
+  <div class="acc"><a class="btn lwa" target="_blank" rel="noopener">CONTACTO</a></div>
 </div>
+<p class="firma" id="empresa"></p>
 </div>
 
 <div class="bar">
@@ -134,7 +146,11 @@ function init(d){
   D=d;const c=d.config;
   $('#temp').textContent=c.temporada||'';$('#f1').textContent=c.frase1||'';$('#f2').textContent=c.frase2||'';
   $('#lema').textContent=c.lema;$('#medida').textContent=c.medida;
-  $('#nota2').textContent=[c.ivaNota,'Medios de pago: '+c.pagos.join(', ')+'.'].filter(Boolean).join(' ');
+  $('#nota2').textContent=c.ivaNota||'';$('#nota3').textContent=c.contenidoNota||'';$('#empresa').textContent=c.empresa||'';
+  const IC={
+    pago:'<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="26" height="18" rx="2"/><path d="M3 13h26M7 20h6"/></svg>',
+    entrega:'<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9h16v13H2zM18 14h6l4 4v4H18"/><circle cx="8" cy="24" r="2.5" fill="#cbddd1"/><circle cx="23" cy="24" r="2.5" fill="#cbddd1"/></svg>'};
+  $('#vent').innerHTML=(c.ventajas||[]).map(v=>`<div><span class="ic">${IC[v.icono]||''}</span><p>${v.texto}</p></div>`).join('');
   const hola=wa('Hola, quería consultar por las canastas de fin de año.');
   document.querySelectorAll('.lwa').forEach(a=>a.href=hola);
   $('#grid').innerHTML=d.canastas.map((k,i)=>`
