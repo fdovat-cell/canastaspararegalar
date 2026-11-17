@@ -19,7 +19,7 @@ const DATOS = {
     {
       "id": "distincion",
       "nombre": "Canasta Distinción",
-      "precio": 11690,
+      "precio": 12450,
       "foto": "fotos/distincion.webp",
       "contenido": [
         "Whisky Johnnie Walker Etiqueta Negra 1 l",
@@ -56,7 +56,7 @@ const DATOS = {
     {
       "id": "impecable",
       "nombre": "Canasta Impecable",
-      "precio": 3490,
+      "precio": 3790,
       "foto": "fotos/impecable.webp",
       "contenido": [
         "Vino Undurraga Cabernet Sauvignon / Blanc 750 ml (Chile)",
@@ -99,7 +99,7 @@ const DATOS = {
     {
       "id": "barbaridad",
       "nombre": "Canasta Barbaridad",
-      "precio": 9790,
+      "precio": 10450,
       "foto": "fotos/barbaridad.webp",
       "contenido": [
         "Whisky Johnnie Walker Etiqueta Roja 1 l",
@@ -168,7 +168,7 @@ const DATOS = {
     {
       "id": "compromiso",
       "nombre": "Canasta Compromiso",
-      "precio": 3290,
+      "precio": 3590,
       "foto": "fotos/compromiso.webp",
       "contenido": [
         "Vino La Escondida Malbec 750 ml (Argentina)",
